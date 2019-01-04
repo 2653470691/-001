@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 2000px;
+        }
+        img{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<img src="images/tianshi.gif" alt="" id="im">
+<script src="common.js"></script>
+<script>
+    // document.onmouseover=function(e){
+    //     console.log(arguments[0]);
+    //     console.log(e);
+    // };
+
+    // document.onmousemove=function(e){
+    //     my$("im").style.left=e.clientX+"px";
+    //     my$("im").style.top=e.clientY+"px";
+    // };
+
+    // document.onmousemove=function(){
+    //     my$("im").style.left=window.event.clientX+"px";
+    //     my$("im").style.top=window.event.clientY+"px";
+    // }
+
+    // document.onmousemove=function(e){
+    //     e=window.event||e;
+    //     my$("im").style.left=e.clientX+"px";
+    //     my$("im").style.top=e.clientY+"px";
+    // };
+
+    document.onmousemove=function(e){
+        my$("im").style.left=e.pageX+"px";
+        my$("im").style.top=e.pageY+"px";
+    };
+
+</script>
+</body>
+</html>
